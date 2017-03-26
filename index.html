@@ -1,1 +1,178 @@
-<!DOCTYPE html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Holiday Pay Calculator App</title>
+<style>
+/* CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  min-width: 1070px;
+  width: auto !important;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 28px;
+}
+
+a {
+  color: #ddf;
+}
+
+a::visited {
+  color: #aaa;
+}
+
+#before, #after {
+  background-image: url("cover.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 35vw;
+  width: 100vh;
+  min-width: 35vw;
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  display: block;
+}
+
+#before {
+  left: 0;
+}
+
+#after {
+  right: 0;
+}
+
+#content {
+  position: relative;
+  display: block;
+  z-index: 9999;
+  height: 100%;
+}
+
+#left, #right, #backing {
+  display: inline-block;
+  float: left;
+  min-height: 100%;
+}
+
+#left, #right {
+  width: 15%;
+  max-width: calc(50vw - 385px);
+}
+
+#backing {
+  width: 70%;
+  margin: -10px 0;
+  background-color: rgb(60, 120, 216);
+  box-shadow: 0px 0px 10px 10px #4f4f4f;
+}
+
+#heading {
+  width: 90%;
+  height: 200px;
+  margin: 10px auto;
+}
+
+#heading > img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+#heading > #box {
+  display: table;
+  vertical-align: middle;
+  height: 100%;
+}
+
+#heading > #box >  h1 {
+  overflow-wrap: normal;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#panel {
+  margin: 0 20px;
+}
+
+#tagline {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+#footer {
+  z-index: 9999;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  background-color: #bbb;
+  text-align: center;
+}
+/* END CSS */
+</style>
+  </head>
+  <body>
+    <div id="before"></div>
+    <div id="content">
+      <div id="left"></div>
+      <div id="backing">
+        <div id="heading">
+          <img src="icon.png" alt="App Icon" />
+          <div id="box">
+            <h1>Holiday Pay Calculator</h1>
+          </div>
+        </div>
+        <div id="panel">
+          <h4 id="tagline"><i>A Holiday Pay Calculator designed specifically for United Flight Attendants!</i></h4>
+          <h2 class="section">About the App:</h2>
+          <p>Holiday Pay Calculator is a great tool for United Flight Attendants!</p>
+
+          <p>
+            This new tool incorporates our new formula for holiday pay in a user friendly format.
+            Simply enter four values: Hourly Pay Rate, Block Hours for the Trip, Time Away From Base for the trip, and Hours on Holiday. 
+            The app does the rest, and displays your total Holiday Pay!
+          </p>
+
+          <p>
+            This app will be continuously supported despite being available for a ONE time fee!
+            The embedded formula will be updated as changes are made to it, and these update will come at NO additional charge.
+          </p>
+          <h2 class="section">Contact Us:</h2>
+          <p>Feel free to email us at our primary address: &nbsp;&nbsp;&nbsp;<a href="mailto:mikesavacool15@hotmail.com">mikesavacool15@hotmail.com</a></p>
+        </div>
+      </div>
+      <div id="right"></div>
+    </div>
+    <div id="after"></div>
+    <div id="footer">
+      Zachary Kaplan | Mike Savacool | Font: <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a>
+    </div>
+  </body>
+</html>
